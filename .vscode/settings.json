@@ -1,0 +1,62 @@
+{
+    "workbench.preferredDarkColorTheme": "Default Dark Modern", // ダークテーマをMonokai Dimmedに設定
+    "workbench.editor.enablePreview": false, // エディタのプレビューを無効にする
+    "workbench.panel.defaultLocation": "right", // パネルのデフォルト位置を右に設定
+    "workbench.tree.indent": 20, // ツリーのインデントを20に設定
+    "window.commandCenter": false, // コマンドセンターを無効にする
+    // ── Editor ────────────────────────────────────────
+    "editor.minimap.enabled": true, // ミニマップを有効にする
+    "editor.formatOnType": true, // タイプ時にフォーマットを実行
+    "editor.formatOnSave": true, // 保存時にフォーマットを実行
+    "editor.formatOnPaste": true, // ペースト時にフォーマットを実行
+    "editor.hover.enabled": true, // ホバーを有効にする
+    "editor.fontSize": 13,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'0xPropt'",
+    "editor.parameterHints.enabled": true,
+    "editor.rulers": [
+        120
+    ],
+    // ── Power Mode ────────────────────────────────────
+    // "powermode.combo.location": "off", // Power Modeのコンボ位置をオフに設定
+    "powermode.enabled": false, // Power Modeを有効にする
+    "powermode.shake.enabled": false, // Power Modeのシェイク効果を無効にする
+    // ── Notebook ──────────────────────────────────────
+    "notebook.output.scrolling": true, // ノートブックの出力をスクロール可能にする
+    "notebook.insertFinalNewline": true, // ノートブックの最後に改行を挿入する
+    "jupyter.askForKernelRestart": false, // Jupyterカーネルの再起動確認を無効にする
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    // ── Explorer ──────────────────────────────────────
+    "explorer.confirmDelete": false, // ファイル削除の確認を無効にする
+    "explorer.confirmDragAndDrop": false, // ドラッグ＆ドロップの確認を無効にする
+    // ── Files / Exclude ───────────────────────────────
+    "files.insertFinalNewline": true, // ファイルの最後に改行を挿入する
+    "files.autoSave": "afterDelay", // ファイルを遅延後に自動保存する
+    "files.exclude": {
+        "**/__pycache__/": true, // すべての __pycache__ を隠す
+        "**/*.pyc": true, // すべての *.pyc を隠す
+        ".mypy_cache": true,
+        ".pytest_cache": true,
+        ".ruff_cache": true,
+        // ".venv": true
+    },
+    "search.exclude": {
+        "**/__pycache__/": true,
+        "**/*.pyc": true
+    },
+    // ── Python ────────────────────────────────────────
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff", // Pythonのデフォルトフォーマッタをcharliermarsh.ruffに設定
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit", // 保存時にimportを自動整形
+            "source.fixAll": "explicit" // 保存時にエラーを修正
+        },
+    },
+    "python.analysis.typeCheckingMode": "off"
+}
